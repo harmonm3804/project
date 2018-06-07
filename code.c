@@ -152,7 +152,7 @@ else
     {
     printf("Turns out they're just ditching. (aka Xiran with her 5 truancies) You're upset, to say the LEAST.\n");
    }
-}
+
 }
  else if (fourth != 0)
    {
@@ -168,20 +168,22 @@ int fifth;
   int a5;
 
    {
-    printf("Regardless of your relationship with your partner, you're super stressed because you had a math presentation you were preparing for during$
-    printf("0: I don't care. I'm hungry. ¯\_(ツ)_/¯ \n");
+    printf("Regardless of your relationship with your partner, you're super stressed because you had a math presentation you were preparing for during lunch and didn't get to eat. You decide to bring food to class. You know eating inclass is against the rules. What do you do?\n");
+    printf("0: I don't care. I'm hungry.\n");
     printf("1: I can make it through class without lunch. I'll pass.\n");
     fgets (input5, 256, stdin);
     a5 = sscanf (input5, "%f", &fifth);
    }
+{
  if (fifth == 0)
    {
-   printf("Wow. You broke rules and you ended up spilling food all over your computer, breaking it. You owe the school $200 for a replacement laptop. $
+   printf("Wow. You broke rules and you ended up spilling food all over your computer, breaking it. You owe the school $200 for a replacement laptop. It will also take three days to recover your work.\n"); $
    }
  else
 {
-   printf("Bad choice. You faint on the way home and get sent to the hospital for malnutrition. You're out of school for the next three days recoverin$
+   printf("Bad choice. You faint on the way home and get sent to the hospital for malnutrition. You're out of school for the next three days recovering.\n");$
    }
+}
 // return fifth
 
   int sixth;
@@ -189,37 +191,24 @@ int fifth;
   int a6;
 
   {
-   printf("Your create task is due tomorrow! After that accident, you are finally back to your progress 3 days ago. Your partner is gone again. Do you$
+   printf("Your create task is due tomorrow! After that accident, you are finally back to your progress 3 days ago. Your partner is gone again. Do you:\n");$
     printf("0: Don't worry about her.. I'll just finish the write up and turn it in.\n");
     printf("1: Wait for her to finish her parts and then do write up.\n");
     fgets (input6, 256, stdin);
     a6 = sscanf (input6, "%f", &sixth);
    }
- if (sixth == 0)
-printf("Bad choice. You faint on the way home and get sent to the hospital for malnutrition. You're out of school for the next three days recoverin$
-   }
-// return fifth
-
-  int sixth;
-  char input6 [256];
-  int a6;
-
-  {
-   printf("Your create task is due tomorrow! After that accident, you are finally back to your progress 3 days ago. Your partner is gone again. Do you$
-    printf("0: Don't worry about her.. I'll just finish the write up and turn it in.\n");
-    printf("1: Wait for her to finish her parts and then do write up.\n");
-    fgets (input6, 256, stdin);
-    a6 = sscanf (input6, "%f", &sixth);
-   }
- if (sixth == 0)
+ {
+if (sixth == 0)
    {
-   printf("Sooo, you didn't communicate with your partner. Y'all ended up writing about the same algorithms, and were knocked some points off for copy$
+   printf("Sooo, you didn't communicate with your partner. Y'all ended up writing about the same algorithms, and were knocked some points off for copying each other's writeups./n");$
    }
 else
    {
-   printf("Don't trust your classmates. They never did their write up, and you fell asleep as the deadline passed. At least you got to turn it in late$
+   printf("Don't trust your classmates. They never did their write up, and you fell asleep as the deadline passed. At least you got to turn it in late?\n");$
    }
 // return sixth 
+}
+   printf("Since you failed your create task, there is no way you will pass this class now. Try again and I wish you good luck.\n");
+   printf("'It's pretty hard to fail this class. -Whitehouse 2018'\n");
 
-   printf("Since you failed your create task, there is no way you will pass this class now. Try again and I wish you good luck./n");
-   printf("'It's pretty hard to fail this class. -Whitehouse 2018'/n")
+}
