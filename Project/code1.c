@@ -2,21 +2,21 @@
 #include<stdlib.h>
 #include<time.h>
 
-int main()
+void code1Main()
 {
  {
  printf("Welcome to computer science principles! In this class, we will perform various projects. Like every thing in life, there will be complications. Choose your path through this class. Good luck.\n\n");
  }
   int first;
   char input [256];
-  int a;
+ // int a;
 
    {
     printf("It's the first day of school. Who do you decide to sit with?\n");
     printf("0: Sophomores!\n");
     printf("1: Seniors.. they seem chill.\n");
     fgets (input, 256, stdin);
-    a = sscanf (input, "%f", &first);
+    first = sscanf (input, "%d", &first);
    }
  if (first == 0)
    {
@@ -31,18 +31,18 @@ int main()
 
   int second;
   char input2 [256];
-  int a2;
+ // int a2;
 
   int secondone;
   char input21 [256];
-  int a21;
+ // int a21;
 
    {
     printf("You've begun your first project in App Inventor, the Soundboard project. When making your write up, do you use an aia or apk file for making your QR code?\n");
     printf("0: aia\n");
     printf("1: apk\n");
     fgets (input2, 256, stdin);
-    a2 = sscanf (input2, "%f", &second);
+    secondone = sscanf (input2, "%d", &second);
    }
  if (second == 0)
    {
@@ -57,7 +57,7 @@ int main()
    printf("0: My life is sad. Deal with it.\n");
    printf("1: Complain to Whitehouse\n");
    fgets (input21, 256, stdin);
-   a21 = sscanf (input21, "%f", &secondone);
+   secondone = sscanf (input21, "%d", &secondone);
 
    if (secondone == 0)
 
@@ -71,13 +71,13 @@ int main()
    }
   int third;
   char input3 [256];
-  int a3;
+//  int a3;
    {
     printf("You are bored and the unit 3 test is tomorrow. Do you read Blown to Bits?\n");
     printf("0: Read\n");
     printf("1: Hang with friends\n");
     fgets (input3, 256, stdin);
-    a3 = sscanf (input3, "%f", &third);
+    third = sscanf (input3, "%d", &third);
    }
  if (third == 0)
    {
@@ -90,7 +90,7 @@ int main()
 
   int thirdone;
   char input31 [256];
-  int a31;
+ // int a31;
 
 
 srand(time(NULL));
@@ -102,7 +102,7 @@ srand(time(NULL));
     printf("0: Go to school\n");
     printf("1: Skip\n");
     fgets (input31, 256, stdin);
-    a31 = sscanf (input31, "%f", &thirdone);
+    thirdone = sscanf (input31, "%d", &thirdone);
    }
  if (thirdone == 0)
    {
@@ -120,18 +120,18 @@ srand(time(NULL));
 
 int fourth;
 char input4 [256];
-int a4;
+//int a4;
 
 int fourthone;
 char input41 [256];
-int a41;
+//int a41;
 
    {
     printf("You've learnt a lot so far; it's Create Task #1 time! It's the first day, what's your plan?\n");
     printf("0: Study for tomorrow's calculus 3 math test!\n");
     printf("1: Start my create task.. I'm a good student :-)\n");
     fgets (input4, 256, stdin);
-    a4 = sscanf (input4, "%f", &fourth);
+    fourth = sscanf (input4, "%d", &fourth);
    }
  if (fourth == 0)
 {
@@ -142,7 +142,7 @@ int a41;
    printf("0: No, I don't know them that well. I'll just carry and be upset about it.\n");
    printf("1: Text her. Find out what's up???\n");
    fgets (input41, 256, stdin);
-   a41 = sscanf (input41, "%f", &fourthone);
+   fourthone = sscanf (input41, "%d", &fourthone);
 }
 
  if (fourthone == 0)
@@ -166,14 +166,14 @@ else
 
   int fifth;
   char input5 [256];
-  int a5;
+ // int a5;
 
    {
     printf("Regardless of your relationship with your partner, you're super stressed because you had a math presentation you were preparing for during lunch and didn't get to eat. You decide to bring food to class. You know eating inclass is against the rules. What do you do?\n");
     printf("0: I don't care. I'm hungry.\n");
     printf("1: I can make it through class without lunch. I'll pass.\n");
     fgets (input5, 256, stdin);
-    a5 = sscanf (input5, "%f", &fifth);
+    fifth = sscanf (input5, "%d", &fifth);
    }
 
  if (fifth == 0)
@@ -189,14 +189,14 @@ else
 
   int sixth;
   char input6 [256];
-  int a6;
+ // int a6;
 
    {
     printf("Your create task is due tomorrow! After that accident, you are finally back to your progress 3 days ago. Your partner is gone again. Do you:\n");
     printf("0: Don't worry about her.. I'll just finish the write up and turn it in.\n");
     printf("1: Wait for her to finish her parts and then do write up.\n");
     fgets (input6, 256, stdin);
-    a6 = sscanf (input6, "%f", &sixth);
+    sixth = sscanf (input6, "%d", &sixth);
    }
  
 if (sixth == 0)

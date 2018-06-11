@@ -1,5 +1,5 @@
 
-TARGET = hellomake
+TARGET = code1
 LIBS = -lm
 CC = gcc
 CFLAGS = -g -Wall -I.
